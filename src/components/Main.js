@@ -4,7 +4,7 @@ class Main extends Component {
   render() {
     return (
       <div className="hello">
-        Hello, I'm the Main component.
+        Hello, I'm the Main component!!!
       </div>
     );
   }
