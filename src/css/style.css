@@ -1,3 +1,8 @@
-.hello {
-  color: #f00;
+.mainbg {
+  background-image: url("http://mrmrs.io/photos/u/011.jpg");
+}
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
 }
