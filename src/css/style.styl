@@ -1,3 +1,115 @@
+
+.city-wrap{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  height:320px;
+  transition: 0.2s ease-out;
+  margin-top:20px;
+
+
+  &__overlay{
+    background: rgba(01,01,01,0.0)
+    position: absolute;
+    border-radius:4px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      background: rgba(01,01,01,0.4)
+
+    }
+  }
+
+  &__name{
+    position: relative;
+    z-index: 1;
+  }
+
+  &__city{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-radius:4px;
+    color:white;
+    padding: 5px;
+    width: 100%;
+    height:100%;
+    margin-top: 10px;
+    margin:10px
+    font-weight: bold;
+    text-align: center;
+    font-size:1.5em;
+    flex: 1;
+    padding:20px;
+
+    &--sanfrancisco {
+      background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('http://news.theregistrysf.com/wp-content/uploads/2015/06/san_francisco.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--saltlakecity {
+      background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('https://parcdn.onjax.com/exitplusutah/images/islc2259_doug-pulsipher.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--richmond{
+      background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('http://epicureandculture.com/wp-content/uploads/2015/08/RVA-wine-cover-photo-e1440083042709.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--newyork{
+      background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('http://blogs-images.forbes.com/koim/files/2015/08/0814_FL-nyc-rooftop-bars_2000x1125-1940x1091.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+      &--portland{
+        background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('http://joshblatteryoga.com/wp-content/uploads/2013/06/oregon.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &--austin{
+        background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('http://cdn.mntm.me/76/79/82/10-Must-Stops-in-Austin-with-Kids-Where-to-Stay-Eat-and-What-to-Do-7679821bf0f840548b848888b6e8ccd0.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+        &--losangeles{
+          background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('https://cdnx.jetcdn.com/static/images/destinations/los-angeles/bg3.jpg');
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+          &--seattle{
+            background:linear-gradient(to top,rgba(01,01,01,0.8) 10%,rgba(01,01,01,0.2)),url('http://kingofwallpapers.com/seattle/seattle-002.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+  }
+
+}
+
+
+
+
 .mainbg
   background-image: url(http://mrmrs.io/photos/u/011.jpg)
 
@@ -22,7 +134,7 @@ header
   &__city
     border: 1px solid black
     flex:1
-    margin: 30px
+    margin: 10px
 
     &--content
       padding-bottom: 100%

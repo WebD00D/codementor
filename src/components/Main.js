@@ -23,34 +23,64 @@ class Main extends Component {
               </nav>
               <div className="tc-l mt4 mt5-m mt6-l ph3">
                 <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">Find Local Programming Mentors</h1>
-                <h2 className="fw1 f3 white-80 mt3 mb4">Up your dev game with in person training</h2>
-                <a className="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/">Call to Action</a>
+                <h2 className="fw1 f3 white-80 mt3 mb4">Up your dev game with in person training right in your city.</h2>
+                <a className="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/">Find a Mentor</a>
                 <span className="dib v-mid ph3 white-70 mb3">or</span>
-                <a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="">Secondary call to action</a>
+                <a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="">Become a Mentor</a>
               </div>
             </div>
           </div>
         </header>
         <div className="content-container">
-          <div className="cities">
-            <div className="cities__city bg-black-50">
-              <div className="cities__city--content">
-                Richmond
-              </div>
+
+          
+
+          <div className="city-wrap">
+            <div className="city-wrap__city city-wrap__city--sanfrancisco">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">San Francisco</div>
             </div>
-            <div className="cities__city bg-black-50">
-              <div className="cities__city--content">
-                New York
-              </div>
-            </div>
-            <div className="cities__city bg-black-50">
-              <div className="cities__city--content">
-                Salt Lake City
-              </div>
+            <div className="city-wrap__city city-wrap__city--saltlakecity">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">Salt Lake City</div>
             </div>
           </div>
-        </div>
 
+          <div className="city-wrap">
+            <div className="city-wrap__city city-wrap__city--richmond">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">Richmond</div>
+            </div>
+            <div className="city-wrap__city city-wrap__city--newyork">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">New York City</div>
+            </div>
+            <div className="city-wrap__city city-wrap__city--portland">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">Portland</div>
+            </div>
+          </div>
+
+          <div className="city-wrap">
+            <div className="city-wrap__city city-wrap__city--austin">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">Austin</div>
+            </div>
+            <div className="city-wrap__city city-wrap__city--losangeles">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">Los Angeles</div>
+            </div>
+            <div className="city-wrap__city city-wrap__city--seattle">
+              <div className="city-wrap__overlay"></div>
+              <div className="city-wrap__name">Seattle</div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
       </div>
     );
   }

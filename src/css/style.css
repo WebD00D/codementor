@@ -1,3 +1,118 @@
+.city-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 320px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  margin-top: 20px;
+}
+.city-wrap__overlay {
+  background: rgba(1,1,1,0);
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.city-wrap__overlay:hover {
+  background: rgba(1,1,1,0.4);
+}
+.city-wrap__name {
+  position: relative;
+  z-index: 1;
+}
+.city-wrap__city {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+}
+.city-wrap__city--sanfrancisco {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://news.theregistrysf.com/wp-content/uploads/2015/06/san_francisco.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://news.theregistrysf.com/wp-content/uploads/2015/06/san_francisco.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--saltlakecity {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("https://parcdn.onjax.com/exitplusutah/images/islc2259_doug-pulsipher.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("https://parcdn.onjax.com/exitplusutah/images/islc2259_doug-pulsipher.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--richmond {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://epicureandculture.com/wp-content/uploads/2015/08/RVA-wine-cover-photo-e1440083042709.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://epicureandculture.com/wp-content/uploads/2015/08/RVA-wine-cover-photo-e1440083042709.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--newyork {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://blogs-images.forbes.com/koim/files/2015/08/0814_FL-nyc-rooftop-bars_2000x1125-1940x1091.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://blogs-images.forbes.com/koim/files/2015/08/0814_FL-nyc-rooftop-bars_2000x1125-1940x1091.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--portland {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://joshblatteryoga.com/wp-content/uploads/2013/06/oregon.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://joshblatteryoga.com/wp-content/uploads/2013/06/oregon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--austin {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://cdn.mntm.me/76/79/82/10-Must-Stops-in-Austin-with-Kids-Where-to-Stay-Eat-and-What-to-Do-7679821bf0f840548b848888b6e8ccd0.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://cdn.mntm.me/76/79/82/10-Must-Stops-in-Austin-with-Kids-Where-to-Stay-Eat-and-What-to-Do-7679821bf0f840548b848888b6e8ccd0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--losangeles {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("https://cdnx.jetcdn.com/static/images/destinations/los-angeles/bg3.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("https://cdnx.jetcdn.com/static/images/destinations/los-angeles/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city-wrap__city--seattle {
+  background: -webkit-linear-gradient(bottom, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://kingofwallpapers.com/seattle/seattle-002.jpg");
+  background: linear-gradient(to top, rgba(1,1,1,0.8) 10%, rgba(1,1,1,0.2)), url("http://kingofwallpapers.com/seattle/seattle-002.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .mainbg {
   background-image: url("http://mrmrs.io/photos/u/011.jpg");
 }
@@ -30,7 +145,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 30px;
+  margin: 10px;
 }
 .cities__city--content {
   padding-bottom: 100%;
