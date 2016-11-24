@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
-import Navigation from './Navigation';
+import React from 'react';
+import Header from './Header';
+import {Link} from 'react-router';
 
-class Main extends Component {
-  render() {
-
-    return (
+class Home extends React.Component{
+  render(){
+    return(
       <div>
-        <header className="sans-serif">
-          <div className="cover bg-left bg-center-l mainbg" >
-            <div className="bg-black-80 pb5 pb6-m pb7-l">
-              <nav className="dt w-100 mw8 center">
-                <div className="dtc w2 v-mid pa3">
-                  <a href="/" className="dib w2 h2 pa1 ba b--white-90 grow-large border-box logo">
-                    Startup
-                  </a>
-                </div>
-                <Navigation />
-              </nav>
-              <div className="tc-l mt4 mt5-m mt6-l ph3">
-                <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">Find Local Programming Mentors</h1>
-                <h2 className="fw1 f3 white-80 mt3 mb4">Up your dev game with in person training right in your city.</h2>
-                <a className="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/app">Find a Mentor</a>
-                <span className="dib v-mid ph3 white-70 mb3">or</span>
-                <a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="">Become a Mentor</a>
-              </div>
-            </div>
+        <Header>
+          <div className="tc-l mt4 mt5-m mt6-l ph3">
+            <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">Find Local Programming Mentors</h1>
+            <h2 className="fw1 f3 white-80 mt3 mb4">Up your dev game with in person training right in your city.</h2>
+            <Link to="/app" className={"f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3"}>
+              Find a Mentor
+            </Link>
+            <span className="dib v-mid ph3 white-70 mb3">or</span>
+            <Link to="/mentor-signup" className={"f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3"}>
+              Become a Mentor
+            </Link>
+
           </div>
-        </header>
-        <div className="content-container">
-
-
-
+        </Header>
+        <div className="content-container content-container--home">
           <div className="city-wrap">
             <div className="city-wrap__city city-wrap__city--sanfrancisco">
               <div className="city-wrap__overlay"></div>
@@ -41,7 +31,6 @@ class Main extends Component {
               <div className="city-wrap__name">Salt Lake City</div>
             </div>
           </div>
-
           <div className="city-wrap">
             <div className="city-wrap__city city-wrap__city--richmond">
               <div className="city-wrap__overlay"></div>
@@ -56,7 +45,6 @@ class Main extends Component {
               <div className="city-wrap__name">Portland</div>
             </div>
           </div>
-
           <div className="city-wrap">
             <div className="city-wrap__city city-wrap__city--austin">
               <div className="city-wrap__overlay"></div>
@@ -71,15 +59,10 @@ class Main extends Component {
               <div className="city-wrap__name">Seattle</div>
             </div>
           </div>
-
-
-
-
-
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Main;
+export default Home;
