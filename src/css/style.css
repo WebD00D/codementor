@@ -1,17 +1,215 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 .app-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   padding-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.app-container__search {
+  max-width: 50%;
+}
+.img {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+.displayName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.displayName:hover {
+  cursor: pointer;
+}
+.dropdown {
+  right: 1rem;
+  position: relative;
+  width: 60%;
+}
+.dropdown__content {
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  min-width: 160px;
+  padding-top: 10px;
+  opacity: 1;
+}
+.dropdown__item {
+  color: #007aff;
+  font-weight: 100;
+  font-size: 12px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  padding-bottom: 10px;
+}
+.dropdown__item:hover {
+  cursor: pointer;
+  color: #808080;
+}
+.dropdown--closed {
+  opacity: 0;
+}
+.navlinks {
+  color: #007aff;
+  border: none;
+  background-color: #fff;
+  font-weight: 100;
+  font-size: 14px;
+}
+.mentorImg {
+  height: 80px;
+  width: 80px;
+}
+.profile_button {
+  width: 100%;
+}
+.mentors__brick {
+  margin-top: 20px;
+  padding: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mentors__avatar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mentors__info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+.mentors__info__name {
+  color: #007aff;
+  font-size: 22px;
+  font-weight: 100;
+}
+.mentors__info__title {
+  color: #8a8a8a;
+  font-size: 18px;
+  font-weight: 100;
+}
+.mentors__info__shortbio {
+  color: #8a8a8a;
+  font-size: 14px;
+  font-weight: 100;
+}
+.mentors__info__skills {
+  margin-top: 10px;
+}
+.mentors__info__skills__skill {
+  font-size: 12px;
+  border-radius: 4px;
+  color: #007aff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #f5f5f5;
+  margin-right: 10px;
+}
+.mentors__actions {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mentors__actions__price {
+  color: #8a8a8a;
+  font-size: 12px;
+}
+.small-font {
+  font-size: 12px;
+}
+.home-page {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.home-page__section {
+  text-align: center;
+  margin-top: 40px;
+}
+.home-page__header {
+  color: #007aff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+}
+.home-page__sub-header {
+  color: #007aff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 2em;
+}
+.home-page__navbuttons {
+  margin-top: 50px;
+  text-align: center;
+}
+.home-page__navbuttons--button {
+  color: #007aff;
+  border: 1px solid #007aff;
+  font-weight: 100;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 4px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin: 5px;
+}
+.home-page__navbuttons--button:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.home-page__navbuttons--button:focus,
+.home-page__navbuttons--button:active {
+  outline: 0;
 }
 .city-wrapper {
   height: 80%;
-  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
   overflow-y: scroll;
   padding-left: 20px;
   padding-right: 20px;
@@ -210,9 +408,9 @@ select:focus {
   background-image: url("http://mrmrs.io/photos/u/011.jpg");
 }
 .logo {
-  color: #fff;
+  color: #007aff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 100;
 }
 .select {
   border-radius: 0px;

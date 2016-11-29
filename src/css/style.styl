@@ -1,18 +1,234 @@
 
 body {
-  background-color: #f5f5f5
+  background-color: white
 }
 
 .app-container {
  display: flex;
- max-width: 90%;
+ justify-content: center;
  margin: 0 auto;
  padding-top:50px;
+ flex-direction: column;
+
+ &__search {
+   max-width: 50%;
+ }
+
 }
+
+.img{
+  height:30px;
+  width:30px;
+  margin-right:5px;
+}
+
+.displayName{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+.dropdown {
+
+  right:1rem
+  position: relative;
+  width:60%;
+
+
+  &__content {
+    position: absolute;
+    right:0;
+    transition: .2s ease;
+
+    min-width: 160px;
+    padding-top:10px;
+  //  bottom: -10px;
+    opacity: 1
+  }
+
+  &__item {
+    color:#007AFF;
+    font-weight:100;
+    font-size:12px;
+    transition: .2s ease;
+    padding-bottom:10px;
+    &:hover {
+      cursor: pointer;
+      color: #808080;
+    }
+
+  }
+
+
+
+  &--closed {
+    opacity:0;
+  }
+
+}
+
+.navlinks {
+    color:#007AFF;
+    border:none;
+    background-color:#ffffff;
+    font-weight:100;
+    font-size:14px;
+}
+
+.mentorImg{
+  height:80px;
+  width:80px;
+}
+
+.profile_button {
+  width:100%;
+}
+
+.mentors {
+
+  &__brick {
+    margin-top:20px;
+    padding:15px;
+    padding-bottom: 30px;
+    border-bottom:1px solid #EEEEEE;
+    display: flex;
+  }
+
+  &__avatar {
+    flex:1
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+
+    flex:3
+
+    &__name{
+      color:#007AFF;
+      font-size:22px;
+      font-weight: 100;
+
+    }
+
+    &__title{
+      color:#8A8A8A;
+      font-size:18px;
+      font-weight: 100;
+    }
+
+    &__shortbio{
+      color:#8A8A8A;
+      font-size:14px;
+      font-weight: 100;
+    }
+
+    &__skills{
+
+      margin-top:10px;
+
+      &__skill{
+        font-size:12px;
+        border-radius: 4px;
+        color:#007AFF;
+        padding-top:4px;
+        padding-bottom: 4px;
+        padding-left:12px;
+        padding-right:12px;
+        background-color:#f5f5f5;
+        margin-right:10px;
+      }
+
+    }
+
+  }
+
+  &__actions {
+    flex:1
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__price {
+      color:#8A8A8A;
+      font-size:12px;
+    }
+  }
+
+}
+
+.small-font {
+  font-size:12px;
+}
+
+
+.home-page {
+  justify-content: center;
+  flex: 1;
+
+  &__section {
+    text-align: center;
+    margin-top:40px;
+  }
+
+  &__header {
+    color:#007AFF;
+    text-align: center;
+    font-weight:100;
+    font-size:3em
+  }
+
+  &__sub-header {
+    color:#007AFF;
+    text-align: center;
+    font-weight:100;
+    font-size:2em
+  }
+
+  &__navbuttons {
+
+    margin-top:50px;
+    text-align: center;
+
+    &--button {
+      color:#007AFF;
+      border:1px solid #007AFF;
+      font-weight: 100;
+      background-color: #ffffff;
+      text-decoration: none;
+      padding:5px;
+      padding-left:2%;
+      padding-right:2%
+      border-radius: 4px;
+      transition: 0.2s ease;
+      margin:5px;
+
+      &:hover{
+        background-color: #f5f5f5;
+        cursor: pointer;
+      }
+
+      &:focus , &:active {
+        outline: 0;
+      }
+
+    }
+
+  }
+
+}
+
 
 .city-wrapper {
   height:80%;
-  border:1px solid #eeeeee;
+  border-bottom:1px solid #eeeeee;
+  border-top:1px solid #eeeeee;
   overflow-y: scroll;
   padding-left:20px;
   padding-right:20px;
@@ -215,9 +431,9 @@ input:active, select:active, input:focus, select:focus{
   background-image: url(http://mrmrs.io/photos/u/011.jpg)
 
 .logo
-  color:white
+  color:#007AFF;
   text-decoration: none
-  font-weight:700
+  font-weight:100
 
 .select
   border-radius: 0px

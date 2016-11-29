@@ -11,12 +11,7 @@ class MentorSignup extends React.Component{
   render(){
     return(
       <div>
-        <Header>
-          <div className="tc-l mt4 mt5-m mt6-l ph3">
-            <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">Become a Mentor</h1>
-            <h2 className="fw1 f3 white-80 mt3 mb4 lh-title">Share your passion and knowledge of code <br /> with people right in your city.</h2>
-          </div>
-        </Header>
+
         <div className="content-container content-container--form">
 
           <article className="pa4 black-80">
@@ -107,7 +102,7 @@ class MentorSignup extends React.Component{
                 <input className="b pa2 input-reset ba bg-transparent" type="password" name="passwordtwo"  id="passwordtwo"/>
               </div>
             </fieldset>
-            <div className="mt3"><button onClick={this.loginWithFacebook()} className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" >Sign Up</button></div>
+            <div className="mt3"><button onClick={this.loginWithFacebook} className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" >Sign Up</button></div>
 
           </article>
         </div>
