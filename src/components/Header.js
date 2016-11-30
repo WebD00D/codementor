@@ -24,6 +24,7 @@ class Header extends React.Component{
           <div className="dtc v-mid tr  dropdown">
             <a href="#" onClick={this.showDropDown} className="no-underline avenir navlinks displayName"><img className="br-100 h3 w3 dib img" src={this.props.userDetail.photoURL} />{this.props.userDetail.displayName}</a>
             <div className={`dropdown__content ${this.state.dropDownopen ? `dropdown--open` :  `dropdown--closed` }`}>
+              <div className="dropdown__item avenir">Messages</div>
               <div className="dropdown__item avenir">Account</div>
               <div onClick={this.props.logout} className="dropdown__item avenir">Logout</div>
             </div>
@@ -49,7 +50,6 @@ class Header extends React.Component{
             {/* <button onClick={()=> this.logout()}>logout </button> */}
             <a href="/" className="dib w2 h2 pa1 grow-large logo avenir">
               codepilot
-
             </a>
           </div>
           {nav}

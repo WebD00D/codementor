@@ -8,6 +8,7 @@ import Search from './Search';
 import NotFound from './NotFound';
 import Welcome from './Welcome';
 import Mentors from '../mentors';
+import Db from './Db';
 
 
 class App extends Component {
@@ -39,7 +40,7 @@ logout = () => {
       uid:null,
       userDetail:null
     })
-    
+
 
   };
 
@@ -74,13 +75,13 @@ logout = () => {
               <Match exactly pattern="/" component={Welcome} />
               <Match pattern="/home" render={() => <Home login={this.authenticate} {...this.state} />} />
               <Match pattern="/search" render={() => <Search {...this.state} />} />
+              <Match pattern="/firebase" render={() => <Db {...this.state} />} />
               <Miss component={NotFound} />
             </div>
           </BrowserRouter>
         </div>
         );
       }
-
 }
 
 App.contextTypes = {

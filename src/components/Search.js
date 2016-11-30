@@ -1,6 +1,6 @@
 import React from 'react';
 import UnAuth from './unAuthenticated';
-import { BrowserRouter, Match, Miss, Redirect } from 'react-router';
+import { BrowserRouter, Match, Miss, Redirect, Link } from 'react-router';
 import Mentor from './Mentor';
 
 class Search extends React.Component{
@@ -20,7 +20,20 @@ class Search extends React.Component{
     return(
       <div className="app-container app-container__search">
         <div className="home-page">
-          <div className="home-page__sub-header avenir">Salt Lake City</div>
+          <div className="cities avenir">
+            <label className="cities__city " value="saltlake">Salt Lake City</label>
+            <label className="cities__city ">San Francisco</label>
+            <label className="cities__city ">Richmond</label>
+            <label className="cities__city ">Seattle</label>
+            <label className="cities__city ">Austin</label>
+
+          </div>
+          <div className="cities avenir">
+
+            <label className="cities__city ">New York City</label>
+            <label className="cities__city ">Los Angeles</label>
+            <label className="cities__city ">Boston</label>
+          </div>
           <div className="mentors">
             {
               Object

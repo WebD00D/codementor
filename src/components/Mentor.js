@@ -25,7 +25,7 @@ const Mentor = (props) => {
         </div>
       </div>
       <div className="mentors__actions">
-        <button className="home-page__navbuttons--button avenir small-font grow profile_button">View Profile</button>
+        <button className="home-page__navbuttons--button avenir small-font grow profile_button">Send Message</button>
         <label className="mentors__actions__price avenir">{details.price}</label>
       </div>
 

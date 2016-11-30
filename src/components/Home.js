@@ -19,8 +19,6 @@ class Home extends React.Component{
     return(
           <div>
             <div className="home-page">
-              <div className="home-page__header avenir">Homepage</div>
-
               <div className="home-page__navbuttons">
                 <button onClick={()=> this.props.login('github')} className="home-page__navbuttons--button avenir">Login with GitHub</button>
                 <button onClick={()=> this.props.login('facebook')} className="home-page__navbuttons--button avenir">Login with Facebook</button>
